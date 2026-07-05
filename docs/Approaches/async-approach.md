@@ -87,7 +87,8 @@ const asyncResponse = predefinedHttpCallInstructionsAsync.get.success(
 If you need full control, define a raw `HttpCallInstructionAsync` tuple:
 
 ```typescript
-import {HttpCallInstructionAsync, HttpResponse} from 'ngx-testbox/testing';
+import {HttpResponse} from '@angular/common/http';
+import {HttpCallInstructionAsync} from 'ngx-testbox/testing';
 
 const customInstruction: HttpCallInstructionAsync = [
   ['/api/search', 'GET'],                           // [EndpointPath, HttpMethod]

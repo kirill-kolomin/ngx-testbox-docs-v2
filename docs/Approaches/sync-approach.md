@@ -82,7 +82,8 @@ const postError = predefinedHttpCallInstructions.post.error(
 If you need full control, define a raw `HttpCallInstruction` tuple:
 
 ```typescript
-import {HttpCallInstruction, HttpResponse} from 'ngx-testbox/testing';
+import {HttpResponse} from '@angular/common/http';
+import {HttpCallInstruction} from 'ngx-testbox/testing';
 
 const customInstruction: HttpCallInstruction = [
   ['/api/search', 'GET'],                           // [EndpointPath, HttpMethod]
