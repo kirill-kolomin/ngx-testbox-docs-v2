@@ -25,6 +25,17 @@ It handles common challenges that may occur in the way of testing features in bl
 npm install ngx-testbox
 ```
 
+## Optional: install the AI agent skill
+
+If you use an AI coding agent, you can also install the dedicated `ngx-testbox` skill package.
+
+```bash
+npx skillpm install ngx-testbox-agent-skill
+```
+
+The skill helps agents create, review, debug, and refactor tests built with `ngx-testbox`.
+See the [AI agent skill](ai-agent-skill.md) page for details.
+
 ## Prepare your code base for the first test
 
 ### Define test ids
