@@ -24,7 +24,7 @@ The classic path using Angular's `fakeAsync` zone and virtual time via `tick()`.
 - Response getters must be synchronous.
 - Time is simulated via `tick(ms)`.
 
-See [Choosing your approach](approaches/choosing-your-approach.md) for a detailed comparison.
+See [Choosing your approach](Approaches/choosing-your-approach.md) for a detailed comparison.
 
 ---
 
@@ -33,7 +33,7 @@ See [Choosing your approach](approaches/choosing-your-approach.md) for a detaile
 With ngx-testbox, you stay in full control of asynchronous operations.
 Every unexpected request or task is surfaced immediately, so nothing slips through unnoticed.
 
-At the same time, the library provides convenient utilities to enhance your development experience, such as [predefined http call instructions](api/predefined-http-call-instructions.md) and convenient [harnesses for DOM interaction](api/debug-element-harness.md).
+At the same time, the library provides convenient utilities to enhance your development experience, such as [predefined http call instructions](Api/predefined-http-call-instructions.md) and convenient [harnesses for DOM interaction](Api/debug-element-harness.md).
 
 ## Focus on features, not on code
 
@@ -62,7 +62,7 @@ This means:
 - No unexpected changes occur during test execution.
 
 In complex apps, one request may trigger several more.
-Ngx-testbox takes full control over async operations in the Zone, including HTTP, based on your defined [HTTP call instructions](api/http-call-instruction.md) at each step.
+Ngx-testbox takes full control over async operations in the Zone, including HTTP, based on your defined [HTTP call instructions](Api/http-call-instruction.md) at each step.
 This gives you deterministic, stable test runs every time.
 
 ## Test-Driven Development

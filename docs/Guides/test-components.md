@@ -25,9 +25,9 @@ Recipe for good test cases includes the next steps:
 1. Delve into your business domain. Investigate **Acceptance Criteria** of your user story, at least approximately. Each Acceptance Criteria is a test case, or several ones, that you will cover in codebase.
 2. Set test ids up. If you have written template, apply them to elements.
 3. Create skeletons for your test cases—write test suites (`describe`s) + test cases (`it`s).
-4. Generate the `Harness` class for your component that extends from [`DebugElementHarness`](../api/debug-element-harness.md).
+4. Generate the `Harness` class for your component that extends from [`DebugElementHarness`](../Api/debug-element-harness.md).
 5. Implement one by one a test case using the stabilization function for your chosen approach.
-6. In parallel, you need to prepare HTTP call instructions ([`HttpCallInstruction`](../api/http-call-instruction.md)). For that you need to communicate with your backend team to understand the API contract.
+6. In parallel, you need to prepare HTTP call instructions ([`HttpCallInstruction`](../Api/http-call-instruction.md)). For that you need to communicate with your backend team to understand the API contract.
 
 ---
 
@@ -36,7 +36,7 @@ Recipe for good test cases includes the next steps:
 One of the main benefits ngx-testbox brings is the simplicity of working with DOM elements.
 
 Define a type array with strings using `as const`, generate a map out of it with `TestIdDirective.idsToMap`.
-Use the map within template with [`TestIdDirective`](../api/debug-element-harness.md#testiddirective), and pass the array as an argument to [`DebugElementHarness`](../api/debug-element-harness.md).
+Use the map within template with [`TestIdDirective`](../Api/debug-element-harness.md#testiddirective), and pass the array as an argument to [`DebugElementHarness`](../Api/debug-element-harness.md).
 
 :::note
 `TestIdDirective` and `DebugElementHarness` work in conjunction, but they are optional.

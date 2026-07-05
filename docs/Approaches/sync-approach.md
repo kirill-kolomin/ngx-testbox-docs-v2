@@ -138,7 +138,7 @@ Examples:
 - Too many stabilization cycles → `MaximumAttemptsToStabilizeFixtureReachedError`
 - Promise returned from response getter → `CannotUsePromiseResponseWithinFakeAsync`
 
-See [Errors reference](../api/errors.md) for the full list.
+See [Errors reference](../Api/errors.md) for the full list.
 
 ## Full example: testing a component with fakeAsync
 

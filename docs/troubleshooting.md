@@ -77,7 +77,7 @@ Your component made an HTTP request that did not match any of the provided instr
 You passed a response getter that returns a `Promise` to `runTasksUntilStable` (which runs inside `fakeAsync`).
 
 ### Solutions
-- Switch to the [async/await approach](approaches/async-approach.md) (`runTasksUntilStableAsync`).
+- Switch to the [async/await approach](Approaches/async-approach.md) (`runTasksUntilStableAsync`).
 - Make the response getter synchronous.
 
 ---

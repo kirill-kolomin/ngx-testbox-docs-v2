@@ -132,7 +132,7 @@ The async approach throws on the same conditions as the sync approach:
 - Unused HTTP instruction → `HttpInstructionWasNotExecutedDuringFixtureStabilizationError`
 - Timeout → `LongRunningComponentError`
 
-See [Errors reference](../api/errors.md) for the full list.
+See [Errors reference](../Api/errors.md) for the full list.
 
 ## Full example: testing a component with async/await
 

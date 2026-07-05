@@ -29,7 +29,7 @@ npm install ngx-testbox
 
 ### Define test ids
 
-The following example uses the [`TestIdDirective`](api/debug-element-harness.md) to create test IDs for your components.
+The following example uses the [`TestIdDirective`](Api/debug-element-harness.md) to create test IDs for your components.
 
 ```typescript
 import {TestIdDirective} from 'ngx-testbox';
@@ -53,14 +53,14 @@ export const testIdMap = TestIdDirective.idsToMap(testIds);
 
 The following example uses several key APIs from ngx-testbox:
 
-- [`DebugElementHarness`](api/debug-element-harness.md) - A utility class for interacting with elements in tests
-- [`predefinedHttpCallInstructionsAsync`](api/predefined-http-call-instructions.md) - Shortcuts for common HTTP call instructions for the async/await approach
-- [`runTasksUntilStableAsync`](api/run-tasks-until-stable-async.md) - A function that runs Angular change detection and processes tasks until the component fixture is stable
+- [`DebugElementHarness`](Api/debug-element-harness.md) - A utility class for interacting with elements in tests
+- [`predefinedHttpCallInstructionsAsync`](Api/predefined-http-call-instructions.md) - Shortcuts for common HTTP call instructions for the async/await approach
+- [`runTasksUntilStableAsync`](Api/run-tasks-until-stable-async.md) - A function that runs Angular change detection and processes tasks until the component fixture is stable
 
 :::info
 The example below uses the **async/await approach**, which is the recommended default for new tests. It works with both zoneful and zoneless Angular applications.
 
-If you prefer the classic `fakeAsync` style, see the [sync approach](approaches/sync-approach.md).
+If you prefer the classic `fakeAsync` style, see the [sync approach](Approaches/sync-approach.md).
 :::
 
 ```typescript
