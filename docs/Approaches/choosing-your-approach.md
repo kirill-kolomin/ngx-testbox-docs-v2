@@ -45,7 +45,7 @@ You do not need to be on zoneless to adopt it.
 - Your app is **zoneless** or migrating toward zoneless.
 - You want your response getters to perform async work (e.g. reading JSON files, awaiting helpers).
 - You prefer `async/await` over `fakeAsync` / `tick()`.
-- You want delayed work to be handled in a way that matches zoneless Angular (work with both zoneless and zoned).
+- You want delayed work to be handled in a way that matches zoneless Angular (work with both zoneless and zone-based).
 
 See [Async approach →](async-approach.md)
 
