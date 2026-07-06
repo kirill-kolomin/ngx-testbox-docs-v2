@@ -99,6 +99,16 @@ The component did not stabilize within `componentLongRunTimeout` (default: 10 se
   });
   ```
 
+### Zoneless delayed work is not keeping the fixture unstable
+
+If your app is zoneless and a timeout or interval should count toward fixture stability, use Angular's [`PendingTasks`](https://angular.dev/api/core/PendingTasks).
+
+This is especially important when delayed work happens before the first HTTP request is created. Without `PendingTasks`, `runTasksUntilStableAsync` can finish early because Angular may consider the fixture stable even though your component still has delayed work to do.
+
+If the timer comes from a third-party library and you cannot reasonably instrument it with `PendingTasks`, mock that library or the code path that depends on it in the test.
+
+If you see `HttpInstructionWasNotExecutedDuringFixtureStabilizationError` in this situation, it usually means the component never reached the delayed code path during stabilization.
+
 ---
 
 ## HTTP requests don't affect zone stability

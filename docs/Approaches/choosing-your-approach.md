@@ -14,6 +14,9 @@ Ngx-testbox provides two approaches for stabilizing Angular tests. This page hel
 
 It is simpler, works with or without `zone.js`, and aligns with the direction of modern Angular.
 
+If your app is zoneless, the async/await approach is the only supported choice.
+See [Zoneless →](zoneless.md).
+
 :::info
 The async/await approach can run in **both zoneful and zoneless** Angular applications.
 You do not need to be on zoneless to adopt it.
@@ -42,6 +45,7 @@ You do not need to be on zoneless to adopt it.
 - Your app is **zoneless** or migrating toward zoneless.
 - You want your response getters to perform async work (e.g. reading JSON files, awaiting helpers).
 - You prefer `async/await` over `fakeAsync` / `tick()`.
+- You want delayed work to be handled in a way that matches zoneless Angular (work with both zoneless and zoned).
 
 See [Async approach →](async-approach.md)
 
